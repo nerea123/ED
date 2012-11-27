@@ -11,6 +11,21 @@ public class Array {
 		int m1 = menor(v1);
 		System.out.println("m1=" + m1);
 		
+		int pos=posicionDe(v1,33);
+		System.out.println("Posicion es " + pos);
+	}
+	
+	private static int posicionDe(int[]v,int x){
+		int pos=0;
+		for(int i=0;i<v.length;i++){
+			
+			if(v[i]==x)		
+				pos=i;
+			else
+				pos=-1;	
+			}
+		return pos;
+		
 	}
 	
 	private static int menor(int[] v) {
